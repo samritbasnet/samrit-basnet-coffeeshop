@@ -1,10 +1,10 @@
 * {
   box-sizing: border-box;
 }
+
 .header {
   padding: 1rem;
   text-align: left;
-  display: block;
   background-color: #fff0ed;
   width: 100%;
 }
@@ -52,99 +52,111 @@
   color: inherit;
 }
 
-.main-content {
-  display: block;
+.hero {
   background-color: #fff0ed;
-  width: 100%;
-  padding: 2rem;
-  margin-top: 62px;
-  margin-left: 50px;
-  position: relative;
+  padding: 60px 0;
+  min-height: 500px;
 }
 
-.text-container {
-  display: inline-block;
-  vertical-align: top;
-  max-width: 400px;
-  margin-right: 50px;
+.hero__content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  text-align: left;
 }
 
-.main-content__title {
-  display: block;
-  font-size: 3.75rem;
+.hero__title {
+  font-size: 3.5rem;
   font-weight: 300;
-  margin-bottom: 1rem;
+  color: #393939;
+  margin-bottom: 20px;
 }
 
-.main-content__description {
-  font-size: 1.25rem;
-  max-width: 400px;
-  display: inline-block;
-  vertical-align: top;
-  margin-bottom: 1rem;
+.hero__description {
+  max-width: 450px;
+  font-size: 1.1rem;
+  color: #393939;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
-.main-content__hero-image {
-  display: inline-block;
-  height: 450px;
-  padding: 20px;
-  margin-left: 900px;
-  margin-left: top;
-}
-
-.main-content__button {
-  display: inline-block;
-  margin: 10px;
-  width: 160px;
-  padding: 16px 20px;
+.hero__button {
+  padding: 12px 40px;
   background-color: #5bacc3;
-  color: #f7f7f7;
-  border-style: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
 }
+.header__nav-item:hover {
+  color: #5bacc3;
+}
+.hero__button:hover {
+  background-color: #5a9bd4;
+}
+
+.hero__image {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  width: 300px;
+  height: auto;
+  margin-top: -150px;
+}
+
+.product {
+  background-color: #f5f5f5;
+  padding: 60px 0;
+  text-align: center;
+}
+
 .product__header {
   font-size: 3.75rem;
   font-weight: 300;
-  text-align: center;
+  margin-bottom: 40px;
 }
 
 .product__cards {
   text-align: center;
   margin: 0 -2%;
 }
+
 .product__card {
   display: inline-block;
   width: 18%;
   height: 450px;
   border: 1px solid #ddd;
-  justify-content: space-between;
   padding: 30px 20px;
   margin: 0 2% 4%;
-
   vertical-align: top;
   border-radius: 9px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.product-card__image {
+.product__image {
   width: 80%;
   height: 280px;
   background-size: cover;
 }
 
-.product-card__title {
+.product__name {
   font-size: 1.5rem;
   margin-top: 10px;
   font-weight: 200;
 }
 
-.product-card__price {
+.product__price {
   font-size: 1.5rem;
   color: #5bacc3;
   margin-top: 5px;
   font-weight: 200;
 }
 
-.product__view-all-button {
+.product__button {
   display: block;
   margin: 20px auto;
   padding: 10px 35px;
@@ -154,27 +166,25 @@
   cursor: pointer;
 }
 
-.discount-section {
+.discount {
   text-align: center;
   margin-top: 50px;
   padding: 15px 0;
   width: 80%;
   margin-left: 150px;
   background-color: #383428;
-  display: block;
 }
 
-.discount-section__text {
+.discount__text {
   font-size: 2rem;
   color: white;
   font-weight: 400;
   display: inline-block;
-  box-sizing: border-box;
   width: 100%;
   padding: 0 20px;
 }
 
-.discount-section__code {
+.discount__code {
   font-weight: 700;
   color: white;
 }
@@ -183,7 +193,7 @@
   margin-top: 150px;
   padding: 2rem;
   background-color: #fff0ed;
-  align-items: center;
+  text-align: center;
 }
 
 .footer__section {
@@ -191,13 +201,9 @@
   margin-bottom: 1.5rem;
   vertical-align: top;
   width: 15%;
-  box-sizing: border-box;
   padding: 0 1rem;
-  margin-left: 200px;
 }
-.footer__text--bold {
-  font-weight: bold;
-}
+
 .footer__title {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
@@ -208,7 +214,11 @@
   font-size: 1rem;
 }
 
-.footer__social-icon {
+.footer__text--bold {
+  font-weight: bold;
+}
+
+.footer__icon {
   display: inline-block;
   width: 30px;
   height: 30px;

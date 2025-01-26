@@ -19,8 +19,6 @@
           class="header__logo"
           src="/assets/coffee-beans-logo-and-footer.svg"
           alt="coffee-bean-logo"
-          width="40px"
-          height="40px"
         />
       </a>
       <h2 class="header__title">nitro</h2>
@@ -38,46 +36,65 @@
           </li>
         </ul>
       </nav>
-      <div class="main-content">
-        <h1 class="main-content__title">Nitro Coffee</h1>
-        <div class="text-container">
-          <p class="main-content__description">
-            Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from
-            certain coffee species.
-          </p>
-          <img class="main-content__hero-image" src="./assets/coffeebeans.png" alt="coffee bag" />
-          <button class="main-content__button">SHOP NOW</button>
-        </div>
-      </div>
     </header>
 
-    <main class="product">
-      <h2 class="product__header">Our Products</h2>
-      <div class="product__cards">
-        <section class="product__card">
-          <img class="product-card__image" src="./assets/coffeebeans.png" alt="coffee beans" />
-          <h3 class="product-card__title">Coffee Beans</h3>
-          <p class="product-card__price">$18.99</p>
-        </section>
+    <main>
+      <section class="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">Nitro Coffee</h1>
+          <p class="hero__description">
+            Coffee is a brewed drink prepared from roasted coffee beans, the
+            seeds of berries from certain coffee species.
+          </p>
+          <button class="hero__button">SHOP NOW</button>
+          <img
+            class="hero__image"
+            src="./assets/coffeebeans.png"
+            alt="coffee bag"
+          />
+        </div>
+      </section>
 
-        <section class="product__card">
-          <img class="product-card__image" src="./assets/coldbrew.png" alt="cold brew" />
-          <h3 class="product-card__title">Cold Brew</h3>
-          <p class="product-card__price">$4.99</p>
-        </section>
+      <section class="product">
+        <h2 class="product__header">Our Products</h2>
+        <div class="product__cards">
+          <article class="product__card">
+            <img
+              class="product__image"
+              src="./assets/coffeebeans.png"
+              alt="coffee beans"
+            />
+            <h3 class="product__name">Coffee Beans</h3>
+            <p class="product__price">$18.99</p>
+          </article>
 
-        <section class="product__card">
-          <img class="product-card__image" src="./assets/inhousebrew.png" alt="in-house brew" />
-          <h3 class="product-card__title">In-house Brew</h3>
-          <p class="product-card__price">$2.99</p>
-        </section>
-      </div>
-      <button class="product__view-all-button">VIEW ALL</button>
+          <article class="product__card">
+            <img
+              class="product__image"
+              src="./assets/coldbrew.png"
+              alt="cold brew"
+            />
+            <h3 class="product__name">Cold Brew</h3>
+            <p class="product__price">$4.99</p>
+          </article>
 
-      <section class="discount-section">
-        <p class="discount-section__text">
+          <article class="product__card">
+            <img
+              class="product__image"
+              src="./assets/inhousebrew.png"
+              alt="in-house brew"
+            />
+            <h3 class="product__name">In-house Brew</h3>
+            <p class="product__price">$2.99</p>
+          </article>
+        </div>
+        <button class="product__button">VIEW ALL</button>
+      </section>
+
+      <section class="discount">
+        <p class="discount__text">
           Get 20% off your first order with code:
-          <strong class="discount-section__code">FirstNitro</strong>
+          <strong class="discount__code">FirstNitro</strong>
         </p>
       </section>
     </main>
@@ -94,9 +111,17 @@
       </div>
       <div class="footer__section footer__section--social">
         <h3 class="footer__title">Social</h3>
-        <img class="footer__social-icon" src="./assets/Facebook-Icon.svg" alt="facebook" />
-        <img class="footer__social-icon" src="./assets/Yelp-Icon.svg" alt="Yelp" />
-        <img class="footer__social-icon" src="./assets/Instagram-Icon.svg" alt="Instagram" />
+        <img
+          class="footer__icon"
+          src="./assets/Facebook-Icon.svg"
+          alt="facebook"
+        />
+        <img class="footer__icon" src="./assets/Yelp-Icon.svg" alt="Yelp" />
+        <img
+          class="footer__icon"
+          src="./assets/Instagram-Icon.svg"
+          alt="Instagram"
+        />
       </div>
     </footer>
   </body>
