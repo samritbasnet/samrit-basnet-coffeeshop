@@ -6,7 +6,6 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
-      href="./css/landing.css"
     />
     <link rel="stylesheet" href="/css/landing.css" />
     <link rel="stylesheet" href="/css/global.css" />
@@ -15,73 +14,89 @@
   </head>
   <body>
     <header class="header">
-      <a href="coffee-bean-logo"
-        ><img
+      <a href="coffee-bean-logo" class="header__logo-link">
+        <img
           class="header__logo"
           src="/assets/coffee-beans-logo-and-footer.svg"
           alt="coffee-bean-logo"
           width="40px"
-          height="40px" /></a
-      >
-      <h2 class="header__title">nitro</h2>
-      <ul>
-        <li><a href="./index.html">ABOUT</a></li>
-        <li><a href="./pages/menu.html">MENU</a></li>
-        <li><a href="./pages/menu.html">SHOP NOW</a></li>
-      </ul>
-    </header>
-    <main class="main-content">
-      <h1 class="">Nitro Coffee</h1>
-      <p>
-        Coffee is a brewed drink prepared from roasted coffee beans,the seeds of berries from
-        certain Coffee species
-      </p>
-      <input type="button" value="SHOP NOW" />
-      <img src="" alt="coffee bag" />
+          height="40px"
+        />
+      </a>
+      <h2 class="header__title">Nitro</h2>
 
-      <h2>Our Products</h2>
-      <section id="coffee-beans">
-        <div class="product-card">
-          <img src="" alt="coffee-beans" />
-          <h3>Coffee Beans</h3>
-          <p>$18.99</p>
-        </div>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="./index.html" class="header__nav-link">ABOUT</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="./pages/menu.html" class="header__nav-link">MENU</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="./pages/menu.html" class="header__nav-link">SHOP NOW</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main-content">
+      <h1 class="main-content__title">Nitro Coffee</h1>
+      <p class="main-content__description">
+        Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from
+        certain coffee species.
+      </p>
+      <img class="main-content__hero-image" src="./assets/coffeebeans.png" alt="coffee bag" />
+      <button class="main-content__button">SHOP NOW</button>
+    </div>
+
+    <main class="product">
+      <h2 class="product__header">Our Products</h2>
+
+      <section class="product-card product-card--coffee-beans">
+        <img class="product-card__image" src="" alt="coffee beans" />
+        <h3 class="product-card__title">Coffee Beans</h3>
+        <p class="product-card__price">$18.99</p>
       </section>
-      <section id="cold-brew">
-        <div class="product-card">
-          <img src="" alt="cold-brew" />
-          <h3>Cold Brew</h3>
-          <p>$4.99</p>
-        </div>
+
+      <section class="product-card product-card--cold-brew">
+        <img class="product-card__image" src="" alt="cold brew" />
+        <h3 class="product-card__title">Cold Brew</h3>
+        <p class="product-card__price">$4.99</p>
       </section>
-      <section id="inhouse-brew">
-        <div class="product-card">
-          <img src="" alt="inhouse-brew" />
-          <h3>In-house Brew</h3>
-          <p>$2.99</p>
-        </div>
+
+      <section class="product-card product-card--in-house-brew">
+        <img class="product-card__image" src="" alt="in-house brew" />
+        <h3 class="product-card__title">In-house Brew</h3>
+        <p class="product-card__price">$2.99</p>
       </section>
-      <button>VIEW ALL</button>
-      <section id="discount">
-        <p>Get 20% off your first order with code: FirstNitro</p>
+
+      <button class="product__view-all-button">VIEW ALL</button>
+
+      <section class="discount-section">
+        <p class="discount-section__text">
+          Get 20% off your first order with code:
+          <strong class="discount-section__code">FirstNitro</strong>
+        </p>
       </section>
     </main>
+
+    <footer class="footer">
+      <div class="footer__section footer__section--address">
+        <h3 class="footer__title">Address</h3>
+        <p class="footer__text">503 Broadway Penthouse, New York</p>
+      </div>
+      <div class="footer__section footer__section--hours">
+        <h3 class="footer__title">Hours</h3>
+        <p class="footer__text">Monday-Friday: 9am-7pm</p>
+        <p class="footer__text">Saturday-Sunday: 10am-5pm</p>
+      </div>
+      <div class="footer__section footer__section--social">
+        <h3 class="footer__title">Social</h3>
+        <img class="footer__social-icon" src="" alt="facebook" />
+        <img class="footer__social-icon" src="" alt="Yelp" />
+        <img class="footer__social-icon" src="" alt="Instagram" />
+      </div>
+    </footer>
   </body>
-  <footer>
-    <div class="Address">
-      <h3>Address</h3>
-      <p>503 Broadway Penthouse New york</p>
-    </div>
-    <div class="hours">
-      <h3>Hours</h3>
-      <p>Monday-Friday:9am-7pm</p>
-      <p>Saturday-Sunday:10am-5pm</p>
-    </div>
-    <div class="Social">
-      <h3>Social</h3>
-      <img src="" alt="facebook" />
-      <img src="" alt="Yelp" />
-      <img src="" alt="Instagram" />
-    </div>
-  </footer>
 </html>
