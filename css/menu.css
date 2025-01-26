@@ -73,26 +73,6 @@ nav > ul > li {
   background-color: #fff;
 }
 
-.Pastries {
+.menu--pastries {
   background-color: #fff0ed;
-}
-.Pastries > h2 {
-  font-size: 60px;
-  text-align: center;
-  font-weight: 300;
-}
-.Pastries > h3 {
-  text-align: center;
-  font-size: 33px;
-  font-weight: 300;
-}
-.Pastries > p {
-  font-style: italic;
-  justify-content: flex-start;
-}
-.Pastries #price__Bacon,
-#price__Blueberry {
-  color: #5bacc3;
-  text-align: center;
-  font-style: normal;
 }
