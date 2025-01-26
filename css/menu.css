@@ -1,20 +1,24 @@
-.heading__nitro {
+.header {
+  padding: 1rem;
+  text-align: left;
+  display: block;
+  background-color: #fff0ed;
+  width: 100%;
+}
+.header__logo {
+  display: inline-block;
+  max-height: 50px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+.header__title {
   color: #393939;
   font-weight: 300;
-  font-size: 2.07rem;
+  margin: 0;
+  display: inline-block;
+  font-size: 3.75rem;
+  vertical-align: middle;
 }
-.background__heading {
-  font-size: 60px;
-  font-weight: 300;
-  color: #fff;
-  background-color: #393939;
-  width: 300px;
-  height: 200px;
-  text-align: center;
-  top: 20px;
-  left: 20px;
-}
-
 .background {
   width: 100%;
   height: 700px;
@@ -23,28 +27,77 @@
   background-size: cover;
   display: block;
 }
-
-nav {
+.background__heading {
+  font-size: 3.75rem;
+  font-weight: 300;
+  color: #fff;
   background-color: #393939;
+  width: 18.75rem;
+  height: 12.5rem;
+  text-align: center;
+  margin: 20px auto;
 }
-nav ul {
+.background {
+  width: 100%;
+  height: 700px;
+  background-image: url('../assets/coffee-circle.jpg');
+  background-position: center;
+  background-size: cover;
+  display: block;
+}
+.nav-lists {
   list-style-type: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+.nav_list__links li {
+  display: inline-block;
+  margin-left: 20px;
 }
 
-nav > ul > li > a {
-  color: white;
-  list-style-type: none;
+.nav-list__link {
   text-decoration: none;
+  color: #393939;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.nav__items {
+  width: 100%;
+}
+.nav_list__links li {
+  display: inline-block;
+  margin-left: 20px;
+}
+nav > ul {
+  list-style-type: none;
+  margin: 0;
+  background-color: #393939;
+  display: block;
+  margin: 0;
+  padding: 1.25rem;
   text-align: center;
 }
 
+nav > ul > li {
+  display: inline-block;
+  margin: 0 10px;
+}
+nav > ul > li > a {
+  color: white;
+  text-align: center;
+  font-size: 1.31rem;
+}
+nav_list__links {
+  display: inline-block;
+  text-decoration: none;
+}
 nav > ul > li {
   text-align: center;
 }
 .menu--hot {
   background-color: #fff0ed;
   width: 100%;
-  height: 700px;
+  height: 36.8rem;
 }
 .menu__heading {
   font-size: 60px;
@@ -54,7 +107,7 @@ nav > ul > li {
 
 .menu__subheading {
   text-align: center;
-  font-size: 33px;
+  font-size: 2.06rem;
   font-weight: 300;
 }
 .menu__description {
@@ -63,16 +116,28 @@ nav > ul > li {
   width: 12.5rem;
   display: block;
   width: 450px;
+  font-size: 1.125rem;
+  font-weight: 400;
 }
 .menu__price {
   color: #5bacc3;
   text-align: center;
   font-size: 1.25rem;
 }
+
 .menu--cold {
   background-color: #fff;
+  width: 100%;
+  height: 32.8rem;
 }
-
 .menu--pastries {
   background-color: #fff0ed;
+}
+.menu__price--blueberry > h3 {
+  font-weight: 700;
+}
+.menu__price > .menu--pastries {
+  background-color: #fff0ed;
+  width: 100%;
+  height: 36.8rem;
 }
