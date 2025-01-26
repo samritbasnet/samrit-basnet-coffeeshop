@@ -61,6 +61,9 @@
   font-size: 1rem;
   font-weight: 500;
 }
+nav-list__link:hover {
+  color: #5bacc3;
+}
 .nav__items {
   width: 100%;
 }
