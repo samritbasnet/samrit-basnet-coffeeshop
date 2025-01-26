@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 .header {
   padding: 1rem;
   text-align: left;
@@ -8,30 +11,39 @@
 
 .header__logo-link {
   text-decoration: none;
+  display: inline-block;
 }
 
 .header__logo {
   width: 40px;
   height: 40px;
+  vertical-align: middle;
 }
 
 .header__title {
   color: #393939;
-  font-size: 1.75rem;
-  font-weight: 300;
+  font-size: 1.65rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-left: 10px;
 }
 
 .header__nav {
+  display: inline-block;
   margin-bottom: 1rem;
+  margin-left: 20px;
+  font-size: 1.09rem;
 }
 
 .header__nav-list {
   list-style-type: none;
   padding: 0;
+  margin: 0;
+  display: inline-block;
 }
 
 .header__nav-item {
-  display: inline-block;
+  display: inline;
   margin-right: 1rem;
 }
 
@@ -43,29 +55,38 @@
 .main-content {
   display: block;
   background-color: #fff0ed;
-  padding: 1rem;
-  margin-top: 2rem;
+  width: 100%;
+  padding: 2rem;
+  margin-top: 62px;
+  margin-left: 50px;
+  position: relative;
 }
 
 .main-content__title {
+  margin-top: 6rem;
   font-size: 3.75rem;
   font-weight: 300;
 }
 
 .main-content__description {
   font-size: 1.25rem;
+  max-width: 400px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .main-content__hero-image {
-  height: 17.5rem;
+  height: 30.5rem;
   width: auto;
+  padding: 50px;
+  margin-left: 400px;
+  vertical-align: middle;
 }
 
 .main-content__button {
   width: 180px;
   display: inline-block;
   padding: 10px 20px;
-  margin: 10px 0;
   color: white;
   background-color: #008080;
   border: none;
@@ -73,8 +94,9 @@
 }
 
 .product__header {
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 300;
+  text-align: center;
 }
 
 .product-card {
@@ -86,7 +108,9 @@
 
 .product-card__image {
   width: 100%;
-  height: auto;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
 }
 
 .product-card__title {
@@ -96,7 +120,7 @@
 
 .product-card__price {
   font-size: 1.1rem;
-  color: #2d2d2d;
+  color: #008080;
   margin-top: 5px;
 }
 
@@ -114,11 +138,12 @@
   text-align: center;
   margin-top: 30px;
   padding: 10px;
-  background-color: #f8f8f8;
+  background-color: #383428;
 }
 
 .discount-section__text {
   font-size: 1.1rem;
+  color: white;
 }
 
 .discount-section__code {
