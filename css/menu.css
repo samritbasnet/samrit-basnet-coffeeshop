@@ -84,25 +84,34 @@ nav > ul > li {
 }
 nav > ul > li > a {
   color: white;
-  text-align: center;
+  text-decoration: none;
   font-size: 1.31rem;
 }
-nav_list__links {
-  display: inline-block;
-  text-decoration: none;
+.menu--hot,
+.menu--cold,
+.menu--pastries {
+  width: 100%;
+  display: block;
+  padding: 20px 0;
 }
-nav > ul > li {
-  text-align: center;
-}
+
 .menu--hot {
   background-color: #fff0ed;
-  width: 100%;
-  height: 36.8rem;
 }
+
+.menu--cold {
+  background-color: #fff;
+}
+
+.menu--pastries {
+  background-color: #fff0ed;
+}
+
 .menu__heading {
   font-size: 60px;
   text-align: center;
   font-weight: 300;
+  margin: 20px 0;
 }
 
 .menu__subheading {
@@ -110,34 +119,19 @@ nav > ul > li {
   font-size: 2.06rem;
   font-weight: 300;
 }
+
 .menu__description {
   font-style: italic;
   text-align: left;
-  width: 12.5rem;
-  display: block;
   width: 450px;
   font-size: 1.125rem;
   font-weight: 400;
+  margin: 0 auto; /* Centers the text block */
 }
+
 .menu__price {
   color: #5bacc3;
   text-align: center;
   font-size: 1.25rem;
-}
-
-.menu--cold {
-  background-color: #fff;
-  width: 100%;
-  height: 32.8rem;
-}
-.menu--pastries {
-  background-color: #fff0ed;
-}
-.menu__price--blueberry > h3 {
-  font-weight: 700;
-}
-.menu__price > .menu--pastries {
-  background-color: #fff0ed;
-  width: 100%;
-  height: 36.8rem;
+  margin: 10px auto;
 }
