@@ -190,28 +190,25 @@
 }
 
 .footer {
-  margin-top: 150px;
-  padding: 2rem;
-  background-color: #fff0ed;
+  background-color: #f9f1ee;
+  padding: 20px;
   text-align: center;
 }
 
 .footer__section {
   display: inline-block;
-  margin-bottom: 1.5rem;
+  margin: 0 40px;
+  padding: 10px;
   vertical-align: top;
-  width: 15%;
-  padding: 0 1rem;
 }
 
 .footer__title {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  font-weight: 300;
+  font-size: 1.2em;
+  margin-bottom: 15px;
 }
 
 .footer__text {
-  font-size: 1rem;
+  margin: 10px 0;
 }
 
 .footer__text--bold {
